@@ -1,0 +1,31 @@
+{
+  "name": "sldv",
+  "version": "1.0.0",
+  "private": false,
+  "description": "common utils",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "NODE_ENV=development tsup src/index.ts --watch",
+    "build": "tsup src/index.ts --dts --minify",
+    "test": "nodemon __tests__/index.js",
+    "test:ui": "vitest --ui"
+  },
+  "files": [
+    "dist/"
+  ],
+  "dependencies": {
+    "@xzzs/utils": "1.0.0-beta.1",
+    "@yarnpkg/lockfile": "^1.1.0",
+    "source-map": "^0.7.3",
+    "vue": "2",
+    "vue3-swipe-button": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "@vitest/ui": "^0.9.4",
+    "nodemon": "^2.0.15",
+    "tsup": "^5.12.6",
+    "typescript": "^4.6.3",
+    "vitest": "^0.9.4"
+  }
+}
